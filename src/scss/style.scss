@@ -1,0 +1,73 @@
+@import "./custom";
+@import "./components/animations";
+@import "./components/darkMode";
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/portfolio";
+@import "./components/project";
+@import "./components/contact";
+@import "./components/footer";
+// resets
+* {
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+}
+.root {
+	height: 500px;
+	background-color: rgb(158, 41, 41);
+}
+a {
+	text-decoration: none;
+}
+// page layout
+.page > * {
+	padding: 80px 1.75rem 1.5rem;
+	color: white;
+	position: relative;
+}
+.section-heading-light {
+	display: none;
+	font-size: 6.125rem;
+	font-weight: 700;
+	position: absolute;
+	top: 80px;
+	left: 100%;
+	transform-origin: top left;
+	transform: rotate(90deg);
+	opacity: 0.05;
+}
+.section-heading {
+	font-size: 1.875rem;
+	font-weight: 700;
+}
+.section-content,
+.section-content > * {
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: justify;
+}
+// spacing
+.section-heading {
+	margin-bottom: 2.625rem;
+}
+@include media-breakpoint-up(md) {
+	.section-heading-light {
+		display: inline;
+	}
+}
+@include media-breakpoint-up(lg) {
+	.section-heading {
+		font-size: 3.125rem;
+	}
+	.page > * {
+		padding: 80px 6.5rem 1.5rem;
+	}
+}

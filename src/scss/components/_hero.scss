@@ -1,0 +1,80 @@
+.hero {
+	color: white;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	&-content {
+		height: 100%;
+		// padding-bottom: 80px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		// gap: 4rem;
+	}
+	&-text {
+		font-size: 1.25rem;
+		font-weight: 700;
+		animation-name: zoomIn;
+		animation-duration: 1s;
+	}
+	&-circle {
+		width: 260px;
+		height: 260px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+	&-circle-animation {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		border: 2px dashed rgba(255, 255, 255, 0.4);
+		animation-name: zoomIn, circleAround;
+		animation-duration: 1s, 10s;
+		animation-delay: 0s, 0.5s;
+		animation-iteration-count: 1, infinite;
+		animation-timing-function: linear, linear;
+		animation-direction: normal, reverse;
+	}
+	&-img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 220px;
+		height: 220px;
+		border-radius: 50%;
+		border: 1px solid black;
+		background-color: white;
+		overflow: hidden;
+		img {
+			animation-name: zoomIn;
+			animation-duration: 1s;
+			width: 100%;
+		}
+	}
+}
+@include media-breakpoint-up(md) {
+	.hero-content {
+		flex-direction: row;
+		width: 100%;
+	}
+	.hero-circle {
+		width: 320px;
+		height: 320px;
+	}
+	.hero-img {
+		width: 280px;
+		height: 280px;
+	}
+}
+@include media-breakpoint-up(lg) {
+	.hero-text {
+		font-size: 1.75rem;
+	}
+}

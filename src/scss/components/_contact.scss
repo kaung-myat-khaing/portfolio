@@ -1,0 +1,16 @@
+.contact {
+	&--socials {
+		margin-top: 3.5rem;
+		width: 100%;
+		list-style-type: none;
+		display: flex;
+		justify-content: flex-start;
+		gap: 2rem;
+		li {
+			font-size: 30px;
+			a i {
+				color: black;
+			}
+		}
+	}
+}

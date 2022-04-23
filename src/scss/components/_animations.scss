@@ -1,0 +1,56 @@
+@keyframes zoomIn {
+	from {
+		transform: scale(0.2);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes zoomInFromSmall {
+	from {
+		transform: scale(0.2);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes slideInUp {
+	from {
+		transform: translate(0, 100%);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+@keyframes slideInRight {
+	from {
+		transform: translate(-100%, 0);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+@keyframes slideInLeft {
+	from {
+		transform: translate(100%, 0);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes circleAround {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

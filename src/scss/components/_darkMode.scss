@@ -1,0 +1,50 @@
+$bg-light-color: rgba(0, 0, 0, 0.95);
+.light {
+	background-color: white;
+	.my-navbar {
+		background-color: rgba(0, 0, 0, 0.95);
+		a {
+			color: white;
+		}
+	}
+	.section-heading-light {
+		color: black;
+	}
+	.hero-circle-animation {
+		border: 2px dashed rgba(0, 0, 0, 0.4);
+	}
+	.page > * {
+		color: black;
+	}
+	.project {
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+			rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	}
+	.about-content--left {
+		background-color: $bg-light-color;
+		&--text {
+			color: white;
+		}
+	}
+	footer {
+		background-color: $bg-light-color;
+		.contact > *,
+		.contact > * > * {
+			color: white;
+		}
+		.contact--socials {
+			li a i {
+				color: white;
+			}
+		}
+		.cpright-statement * {
+			color: white;
+		}
+	}
+	.project {
+		background-color: $bg-light-color;
+		&--text > * {
+			color: white;
+		}
+	}
+}
