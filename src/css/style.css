@@ -7205,7 +7205,6 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  height: 100vh;
 }
 .hero-content {
   height: 100%;
@@ -7262,6 +7261,10 @@
 }
 
 @media (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+
   .hero-content {
     flex-direction: row;
     width: 100%;

@@ -3,7 +3,6 @@
 	display: flex;
 	justify-content: center;
 	min-height: 100vh;
-	height: 100vh;
 	&-content {
 		height: 100%;
 		// padding-bottom: 80px;
@@ -61,6 +60,9 @@
 	}
 }
 @include media-breakpoint-up(md) {
+	.hero {
+		height: 100vh;
+	}
 	.hero-content {
 		flex-direction: row;
 		width: 100%;
