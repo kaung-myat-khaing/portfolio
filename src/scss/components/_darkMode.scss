@@ -1,4 +1,5 @@
 $bg-light-color: rgba(0, 0, 0, 0.95);
+
 .light {
 	background-color: white;
 	.my-navbar {
@@ -41,12 +42,6 @@ $bg-light-color: rgba(0, 0, 0, 0.95);
 			color: white;
 		}
 	}
-	// .project {
-	// 	background-color: $bg-light-color;
-	// 	&--text > * {
-	// 		color: white;
-	// 	}
-	// }
 }
 
 @include media-breakpoint-down(lg) {

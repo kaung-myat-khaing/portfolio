@@ -27,23 +27,24 @@ export default function App() {
 		body.classList.add("light");
 	}
 	if (currentTheme === "system") {
-		if (window.matchMedia("(prefers-color-scheme: dark").matches) {
-			body.classList.remove("light");
-		} else {
+		if (matchMedia("(prefers-color-scheme: light").matches) {
 			body.classList.add("light");
+			console.log("currentTheme: light");
+		} else {
+			body.classList.remove("light");
+			console.log("currentTheme: dark");
 		}
 		window
 			.matchMedia("(prefers-color-scheme: dark)")
 			.addEventListener("change", function (e) {
 				const colorScheme = e.matches ? "dark" : "light";
-				console.log(colorScheme);
 
 				if (colorScheme === "dark") {
-					// setCurrentTheme("dark");
 					body.classList.remove("light");
+					console.log("currentTheme: dark");
 				} else {
-					// setCurrentTheme("light");
 					body.classList.add("light");
+					console.log("currentTheme: light");
 				}
 			});
 	}
