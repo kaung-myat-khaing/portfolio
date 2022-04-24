@@ -9,7 +9,7 @@ import Copyright from "./components/Copyright";
 let wow = new WOW({
 	boxClass: "wow", // default
 	animateClass: "animated", // default
-	offset: 100, // default
+	offset: 30, // default
 	mobile: true, // default
 	live: true, // default
 });
