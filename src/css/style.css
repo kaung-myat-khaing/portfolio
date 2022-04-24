@@ -7205,6 +7205,7 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  height: 100vh;
 }
 .hero-content {
   height: 100%;
@@ -7260,14 +7261,15 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    height: 100vh;
-  }
-
+@media (min-width: 576px) {
   .hero-content {
     flex-direction: row;
     width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .hero-text {
+    font-size: 1.75rem;
   }
 
   .hero-circle {
@@ -7278,11 +7280,6 @@
   .hero-img {
     width: 280px;
     height: 280px;
-  }
-}
-@media (min-width: 992px) {
-  .hero-text {
-    font-size: 1.75rem;
   }
 }
 .about {

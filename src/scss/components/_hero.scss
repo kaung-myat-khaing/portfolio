@@ -3,6 +3,7 @@
 	display: flex;
 	justify-content: center;
 	min-height: 100vh;
+	height: 100vh;
 	&-content {
 		height: 100%;
 		// padding-bottom: 80px;
@@ -59,13 +60,15 @@
 		}
 	}
 }
-@include media-breakpoint-up(md) {
-	.hero {
-		height: 100vh;
-	}
+@include media-breakpoint-up(sm) {
 	.hero-content {
 		flex-direction: row;
 		width: 100%;
+	}
+}
+@include media-breakpoint-up(lg) {
+	.hero-text {
+		font-size: 1.75rem;
 	}
 	.hero-circle {
 		width: 320px;
@@ -74,10 +77,5 @@
 	.hero-img {
 		width: 280px;
 		height: 280px;
-	}
-}
-@include media-breakpoint-up(lg) {
-	.hero-text {
-		font-size: 1.75rem;
 	}
 }
