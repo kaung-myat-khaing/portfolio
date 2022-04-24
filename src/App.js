@@ -29,10 +29,8 @@ export default function App() {
 	if (currentTheme === "system") {
 		if (matchMedia("(prefers-color-scheme: light").matches) {
 			body.classList.add("light");
-			console.log("currentTheme: light");
 		} else {
 			body.classList.remove("light");
-			console.log("currentTheme: dark");
 		}
 		window
 			.matchMedia("(prefers-color-scheme: dark)")
@@ -41,10 +39,8 @@ export default function App() {
 
 				if (colorScheme === "dark") {
 					body.classList.remove("light");
-					console.log("currentTheme: dark");
 				} else {
 					body.classList.add("light");
-					console.log("currentTheme: light");
 				}
 			});
 	}
