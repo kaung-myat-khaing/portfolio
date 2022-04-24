@@ -41,10 +41,19 @@ $bg-light-color: rgba(0, 0, 0, 0.95);
 			color: white;
 		}
 	}
-	.project {
-		background-color: $bg-light-color;
-		&--text > * {
-			color: white;
+	// .project {
+	// 	background-color: $bg-light-color;
+	// 	&--text > * {
+	// 		color: white;
+	// 	}
+	// }
+}
+
+@include media-breakpoint-down(lg) {
+	.light .about-content--left {
+		background-color: transparent;
+		&--text {
+			color: black;
 		}
 	}
 }

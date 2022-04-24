@@ -49,10 +49,10 @@ export default function App() {
 	}
 
 	let [btnClr, setBtnClr] = useState(
-		window.outerWidth >= 992 ? "btn-outline-secondary" : "btn-outline-primary"
+		window.outerWidth >= 1200 ? "btn-outline-secondary" : "btn-outline-primary"
 	);
 	window.onresize = () => {
-		if (window.outerWidth >= 992) setBtnClr("btn-outline-secondary");
+		if (window.outerWidth >= 1200) setBtnClr("btn-outline-secondary");
 		else setBtnClr("btn-outline-primary");
 	};
 
