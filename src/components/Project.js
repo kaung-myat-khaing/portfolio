@@ -6,7 +6,6 @@ export default function Project(props) {
 				<p className="card-text">{props.description}</p>
 			</div>
 			<div className="link-container">
-				<div className="filter"></div>
 				<img
 					src={props.imgUrl}
 					alt={props.altText}
