@@ -11,7 +11,7 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
-		// gap: 4rem;
+		gap: 1rem;
 	}
 	&-text {
 		font-size: 1.25rem;
@@ -20,8 +20,8 @@
 		animation-duration: 1s;
 	}
 	&-circle {
-		width: 260px;
-		height: 260px;
+		width: 240px;
+		height: 240px;
 		border-radius: 50%;
 		display: flex;
 		justify-content: center;
@@ -71,11 +71,11 @@
 		font-size: 1.75rem;
 	}
 	.hero-circle {
-		width: 320px;
-		height: 320px;
+		width: 270px;
+		height: 270px;
 	}
 	.hero-img {
-		width: 280px;
-		height: 280px;
+		width: 250px;
+		height: 250px;
 	}
 }
