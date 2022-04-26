@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import Project from "./Project";
-import projects_data from "../projects-data";
+import projects_data from "../projects_data";
 export default function Portfolio(props) {
 	return (
 		<section id="portfolio" className="portfolio">
