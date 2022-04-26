@@ -9,6 +9,7 @@ import html from "../images/html.png";
 import js from "../images/js.png";
 import react from "../images/react.png";
 import sass from "../images/sass.png";
+import resume from "./Resume_KaungMyatKhaing.pdf";
 let body = document.querySelector("body");
 export default function About(props) {
 	let github;
@@ -74,8 +75,13 @@ export default function About(props) {
 						</div>
 					</div>
 				</div>
-				<a href="#" className="btn btn-outline-accent get-my-resume">
-					Get my resume(pdf)
+				<a
+					href={resume}
+					className="btn btn-outline-accent get-my-resume"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Get my resume(115KB pdf)
 				</a>
 			</div>
 		</section>
