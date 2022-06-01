@@ -9,7 +9,7 @@ import html from "../images/html.png";
 import js from "../images/js.png";
 import react from "../images/react.png";
 import sass from "../images/sass.png";
-import resume from "./Resume_KaungMyatKhaing.pdf";
+import resume from "./Kaung_Myat_Khaing_Resume.pdf";
 let body = document.querySelector("body");
 export default function About(props) {
 	let github;
