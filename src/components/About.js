@@ -1,17 +1,20 @@
 import { nanoid } from "nanoid";
-import workSetupImg from "../images/work-setup.jpg";
-import bootstrap from "../images/bootstrap.png";
-import css from "../images/css.png";
-import figma from "../images/figma.png";
 import github_light from "../images/github-light.png";
 import github_dark from "../images/github-dark.png";
-import html from "../images/html.png";
-import js from "../images/js.png";
-import react from "../images/react.png";
-import sass from "../images/sass.png";
 import resume from "./Kaung_Myat_Khaing_Resume.pdf";
 let body = document.querySelector("body");
 export default function About(props) {
+	function importAll(r) {
+		let images = {};
+		r.keys().forEach((item, index) => {
+			images[item.replace("./", "")] = r(item);
+		});
+		return images;
+	}
+
+	const images = importAll(
+		require.context("../images", false, /\.(png|jpe?g|svg)$/)
+	);
 	let github;
 	if (props.currentTheme === "dark") github = github_light;
 	if (props.currentTheme === "light") github = github_dark;
@@ -19,7 +22,17 @@ export default function About(props) {
 		if (body.classList.contains("light")) github = github_dark;
 		else github = github_light;
 	}
-	const TECH_STACK_IMG = [html, css, js, sass, bootstrap, react, figma, github];
+	// const TECH_STACK_IMG = [html, css, js, sass, bootstrap, react, figma, github];
+	const TECH_STACK_IMG = [
+		images["html.png"],
+		images["css.png"],
+		images["js.png"],
+		images["sass.png"],
+		images["bootstrap.png"],
+		images["react.png"],
+		images["figma.png"],
+		github,
+	];
 	const TECH_STACK_IMG_TITLE = [
 		"HTML",
 		"CSS",
@@ -39,7 +52,7 @@ export default function About(props) {
 					<img
 						className="about-content--left--img"
 						alt="table-top shot of a laptop and a cup of coffee"
-						src={workSetupImg}
+						src={images["work-setup.jpg"]}
 					/>
 					<p className="about-content--left--text">
 						I’m an electronic engineering graduate who enjoy coding and crafting
